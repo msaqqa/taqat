@@ -893,7 +893,6 @@
 <script src="js/script.js"></script>
 <script>
 // set Hero Section Hight
-document.addEventListener("DOMContentLoaded", function () {
   function setSlideHight() {
     const slider = document.querySelector(".slider-two .slide");
     const navbar = document.querySelector(".header-lower");
@@ -903,8 +902,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	sliderHeight = `${window.innerHeight - (navbarHeight + sponsorsHeight)}px`
 	slider.style.height =  sliderHeight
   }
-  setSlideHight();
-})
+// run when load page
+window.addEventListener('load', setSlideHight);
+// run when change size screen
+window.addEventListener('resize', setSlideHight);
 </script>
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
