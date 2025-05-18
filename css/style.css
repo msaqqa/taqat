@@ -1786,7 +1786,7 @@
 
 .slider-two .slide{
 	position:relative;
-	height: 450px;
+	min-height: 450px;
 }
 
 .slider-two .slide .slider-two_title-column{
@@ -1890,13 +1890,13 @@
 
 .slider-two_play span{
 	position: relative;
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 	z-index:10;
 	margin: 0 auto;
 	text-align: center;
 	display: block;
-	line-height:75px;
+	line-height:50px;
 	border-radius:50%;
 	font-size:var(--font-24);
 	color: var(--white-color);
@@ -1920,8 +1920,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width:25px;
-	height: 25px;
+    width:50px;
+	height: 50px;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
