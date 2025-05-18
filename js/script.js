@@ -1,7 +1,16 @@
 (function($) {
 	
 	"use strict";
-	
+
+	// set Hero Section Hight
+	function setHeroSectionHeight() {
+		const windowHeight = $(window).height();
+		const navbarHeight = $('.header-lower').outerHeight();
+		const sponsorsHeight = $('.sponsors-one').outerHeight();
+		const sliderHeight = windowHeight - (navbarHeight + sponsorsHeight);
+		
+		$('.slider-two .slide').css('height', sliderHeight + 'px');
+  	}
 	
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
@@ -590,6 +599,9 @@
 	
 	$(window).on('load', function() {
 		handlePreloader();
-	});	
+		setHeroSectionHeight();
+	});
+
+	$(window).on('resize', setHeroSectionHeight);
 
 })(window.jQuery);

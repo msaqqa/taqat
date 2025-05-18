@@ -1786,7 +1786,7 @@
 
 .slider-two .slide{
 	position:relative;
-	min-height: 500px;
+	min-height: 507px;
 }
 
 .slider-two .slide .slider-two_title-column{
@@ -1804,14 +1804,14 @@
 	
 	opacity: 1;
 	font-weight: 800;
-	line-height: 60px;
+	line-height: 70px;
 	transform:translateY(30px);
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
 	-webkit-transition:all 900ms ease;
 	-ms-transition:all 900ms ease;
 	-o-transition:all 900ms ease;
-	font-size: var(--font-50);
+	font-size: var(--font-60);
 	/* margin-top: var(--margin-top-); */
 }
 

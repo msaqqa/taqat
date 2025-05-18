@@ -190,35 +190,35 @@
 	
 	<!-- Slider Two -->
 	<section class="slider-two">
-			<!-- Slide -->
-			<div class="slide">
-				<div class="slider-two_image-layer" style="background-image: url(images/main-slider/1.jpg)"></div>
-				<div class="auto-container">
-					<!-- Slider One Title Column -->
-					<div class="slider-two_title-column">
-						<div class="slider-two_title-inner">
-							<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video slider-two_play"><span class="fa fa-play"><i class="ripple"></i></span></a>
-							<h1 class="slider-two_heading">The world's <span> best Our Item</span> <br> Service & <span> Solution</span></h1>
-							<div class="slider-two_text">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br> tellus massa. Nullam bibendum sodales est in faucibus.</div>
-							<!-- Button Box -->
-							<div class="slider-two_button-box">
-								<a class="btn-style-one theme-btn" href="contact.html">
-									<div class="btn-wrap">
-										<span class="text-one">Get In Touch <i class="fa-solid fa-arrow-right fa-fw"></i></span>
-										<span class="text-two">Get In Touch <i class="fa-solid fa-arrow-right fa-fw"></i></span>
-									</div>
-								</a>
-								<a class="btn-style-two theme-btn" href="about.html">
-									<div class="btn-wrap">
-										<span class="text-one">Discover more <i class="fa-solid fa-arrow-right fa-fw"></i></span>
-										<span class="text-two">Discover more <i class="fa-solid fa-arrow-right fa-fw"></i></span>
-									</div>
-								</a>
-							</div>
+		<!-- Slide -->
+		<div class="slide">
+			<div class="slider-two_image-layer" style="background-image: url(images/main-slider/1.jpg)"></div>
+			<div class="auto-container">
+				<!-- Slider One Title Column -->
+				<div class="slider-two_title-column">
+					<div class="slider-two_title-inner">
+						<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video slider-two_play"><span class="fa fa-play"><i class="ripple"></i></span></a>
+						<h1 class="slider-two_heading">The world's <span> best Our Item</span> <br> Service & <span> Solution</span></h1>
+						<div class="slider-two_text">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br> tellus massa. Nullam bibendum sodales est in faucibus.</div>
+						<!-- Button Box -->
+						<div class="slider-two_button-box">
+							<a class="btn-style-one theme-btn" href="contact.html">
+								<div class="btn-wrap">
+									<span class="text-one">Get In Touch <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+									<span class="text-two">Get In Touch <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+								</div>
+							</a>
+							<a class="btn-style-two theme-btn" href="about.html">
+								<div class="btn-wrap">
+									<span class="text-one">Discover more <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+									<span class="text-two">Discover more <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<!-- End Slider One -->
 
@@ -298,13 +298,7 @@
 			<div class="row clearfix">
 				<!-- Image Column -->
 				<div class="about-one_image-column col-lg-6 col-md-12 col-sm-12">
-					<!-- <div class="about-one_pattern-two" data-parallax='{"y" : 60}' style="background-image:url(images/background/pattern-3.png)"></div>
-					<div class="about-one_color-layer-two" data-parallax='{"x" : 60}'></div> -->
 					<div class="about-one_image-inner">
-						<!-- <div class="about-one_counter">
-							<div class="about-one_counter-words">+<span class="odometer" data-count="12"></span>k</div>
-							<div class="about-one_counter-text">Our Active Member</div>
-						</div> -->
 						<div class="parallax-scene-4">
 							<div class="about-one_image-two" data-depth="0.20">
 								<img src="images/resource/case.jpg" alt="" />
@@ -692,7 +686,7 @@
 	</section>
 	<!-- End Testimonial One -->
 
-		<!-- Contact Info One -->
+	<!-- Contact Info One -->
 	<section class="contact-info_one">
 		<div class="auto-container">
 			<div class="row clearfix">
@@ -891,22 +885,6 @@
 <script src="js/jquery-ui.js"></script>
 <script src="js/color-settings.js"></script>
 <script src="js/script.js"></script>
-<script>
-// set Hero Section Hight
-  function setSlideHight() {
-    const slider = document.querySelector(".slider-two .slide");
-    const navbar = document.querySelector(".header-lower");
-    const sponsors = document.querySelector(".sponsors-one");
-    const navbarHeight = navbar.clientHeight;
-    const sponsorsHeight = sponsors.clientHeight;
-	sliderHeight = `${window.innerHeight - (navbarHeight + sponsorsHeight)}px`
-	slider.style.height =  sliderHeight
-  }
-// run when load page
-window.addEventListener('load', setSlideHight);
-// run when change size screen
-window.addEventListener('resize', setSlideHight);
-</script>
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
