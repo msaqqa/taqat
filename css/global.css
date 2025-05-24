@@ -37,13 +37,6 @@
 
 **********************************************/
 
-/* 
-	
-	font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
-	
-*/
-
 /*** 
 
 ====================================================================
@@ -56,8 +49,12 @@
 
 :root {
   /* #0092FF in decimal RGB */
-  --main-color: rgb(0, 146, 255);
-  --main-color-rgb: 0, 146, 255;
+  --main-color: rgb(18, 121, 190);
+  --main-color-rgb: 18, 121, 190;
+
+  /* FBB216 in decimal RGB */
+  --secondary-color: rgb(251, 178, 22);
+  --secondary-color-rgb: 251, 178, 22;
 
   /* #1D2C38 in decimal RGB */
   --color-two: rgb(29, 44, 56);
@@ -135,6 +132,7 @@
 
   --font-family-Inter: "Inter", sans-serif;
   --font-family-Roboto: "Roboto", sans-serif;
+  --font-family-LamaSans: "Lama Sans", sans-serif;
 
   /* Fonts Size's */
 
@@ -445,15 +443,34 @@
 }
 
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Muli.woff2") format("woff2"),
-    url("../fonts/Muli.woff") format("woff"),
-    url("../fonts/Muli.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Lama Sans";
+  font-weight: 300;
+  src: local("Lama Sans Regular"),
+    url("../fonts/LamaSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lama Sans";
+  src: url("../fonts/LamaSans-Regular.woff") format("woff");
+  font-weight: 400; /* Regular */
+}
+
+@font-face {
+  font-family: "Lama Sans";
+  src: url("../fonts/LamaSans-Medium.woff") format("woff");
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: "Lama Sans";
+  src: url("../fonts/LamaSans-Bold.woff") format("woff");
+  font-weight: 700; /* Bold */
+}
+
+@font-face {
+  font-family: "Lama Sans";
+  src: url("../fonts/LamaSans-ExtraBold.woff") format("woff");
+  font-weight: 800; /* ExtraBold */
 }
 
 /*** 
@@ -465,7 +482,7 @@
 ***/
 
 body {
-  font-family: var(--font-family-Roboto);
+  font-family: var(--font-family-LamaSans);
   font-size: 14px;
   color: var(--dark-color);
   line-height: 1.6em;
@@ -525,7 +542,7 @@ h6 {
   position: relative;
   margin: 0px;
   background: none;
-  font-family: var(--font-family-Inter);
+  font-family: var(--font-family-LamaSans);
 }
 
 input,
@@ -1149,7 +1166,7 @@ img {
   letter-spacing: 0.4em;
   font-size: var(--font-14);
   text-transform: uppercase;
-  color: var(--main-color);
+  color: var(--secondary-color);
   display: inline-block;
   padding-left: var(--padding-left-40);
 }
@@ -1159,7 +1176,7 @@ img {
   content: "\f1db";
   left: 0px;
   top: 4px;
-  color: var(--main-color);
+  color: var(--secondary-color);
   font-size: var(--font-26);
   font-family: "Flaticon";
   transform: rotate(90deg);
