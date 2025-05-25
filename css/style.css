@@ -407,6 +407,7 @@
   position: relative;
   font-weight: 500;
   margin-top: var(--margin-top-30);
+  font-size: var(--font-22);
 }
 
 .service-block_one-title a {
@@ -459,6 +460,11 @@
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
 }
 
 .service-block_one-lower-box {
@@ -1859,10 +1865,10 @@
   font-weight: 500;
   opacity: 1;
   line-height: 30px;
-  font-size: var(--font-22);
+  font-size: var(--font-20);
   color: rgba(var(--white-color-rgb), 0.7);
   margin-top: var(--margin-top-25);
-  transform: translateY(30px);
+  transform: translateY(50px);
   transition: all 900ms ease;
   -moz-transition: all 900ms ease;
   -webkit-transition: all 900ms ease;
