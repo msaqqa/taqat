@@ -405,7 +405,7 @@
 
 .service-block_one-title {
   position: relative;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: var(--margin-top-30);
   font-size: var(--font-22);
 }
@@ -789,6 +789,8 @@
   margin-bottom: var(--margin-bottom-25);
   padding-bottom: var(--padding-bottom-20);
   border-bottom: 1px solid rgba(var(--black-color-rgb), 0.15);
+  height: 100px;
+  overflow: hidden;
 }
 
 .counter-one_counter {
