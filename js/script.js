@@ -1,6 +1,8 @@
 (function ($) {
   "use strict";
 
+  var isRTL = $("html").attr("dir") === "rtl" || $("body").hasClass("rtl");
+
   // set Hero Section Hight
   function setHeroSectionHeight() {
     const windowHeight = $(window).height();
@@ -276,9 +278,14 @@
       //autoHeight: true,
       smartSpeed: 500,
       autoplay: 6000,
+      rtl: isRTL,
       navText: [
-        '<span class="fa-solid fa-arrow-left fa-fw"></span>',
-        '<span class="fa-solid fa-arrow-right fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-right fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-left fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-left fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-right fa-fw"></span>',
       ],
       responsive: {
         0: {
@@ -315,9 +322,14 @@
       //autoHeight: true,
       smartSpeed: 500,
       autoplay: 6000,
+      rtl: isRTL,
       navText: [
-        '<span class="fa-solid fa-arrow-left fa-fw"></span>',
-        '<span class="fa-solid fa-arrow-right fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-right fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-left fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-left fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-right fa-fw"></span>',
       ],
       responsive: {
         0: {
@@ -350,9 +362,14 @@
       nav: true,
       smartSpeed: 500,
       autoplay: 4000,
+      rtl: isRTL,
       navText: [
-        '<span class="flaticon-left-arrow"></span>',
-        '<span class="flaticon-right-arrow"></span>',
+        isRTL
+          ? '<span class="flaticon-right-arrow"></span>'
+          : '<span class="flaticon-left-arrow"></span>',
+        isRTL
+          ? '<span class="flaticon-left-arrow"></span>'
+          : '<span class="flaticon-right-arrow"></span>',
       ],
       responsive: {
         0: {
@@ -382,9 +399,14 @@
       nav: true,
       smartSpeed: 500,
       autoplay: 4000,
+      rtl: isRTL,
       navText: [
-        '<span class="flaticon-left-arrow"></span>',
-        '<span class="flaticon-right-arrow"></span>',
+        isRTL
+          ? '<span class="flaticon-right-arrow"></span>'
+          : '<span class="flaticon-left-arrow"></span>',
+        isRTL
+          ? '<span class="flaticon-left-arrow"></span>'
+          : '<span class="flaticon-right-arrow"></span>',
       ],
       responsive: {
         0: {
@@ -417,9 +439,14 @@
       //autoHeight: true,
       smartSpeed: 500,
       //   autoplay: 6000,
+      rtl: isRTL,
       navText: [
-        '<span class="fa-solid fa-arrow-left fa-fw"></span>',
-        '<span class="fa-solid fa-arrow-right fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-right fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-left fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-left fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-right fa-fw"></span>',
       ],
       responsive: {
         0: {
@@ -452,9 +479,14 @@
       //autoHeight: true,
       smartSpeed: 500,
       autoplay: 6000,
+      rtl: isRTL,
       navText: [
-        '<span class="fa-solid fa-arrow-left fa-fw"></span>',
-        '<span class="fa-solid fa-arrow-right fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-right fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-left fa-fw"></span>',
+        isRTL
+          ? '<span class="fa-solid fa-arrow-left fa-fw"></span>'
+          : '<span class="fa-solid fa-arrow-right fa-fw"></span>',
       ],
       responsive: {
         0: {

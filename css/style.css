@@ -407,7 +407,7 @@
   position: relative;
   font-weight: 700;
   margin-top: var(--margin-top-30);
-  font-size: var(--font-22);
+  font-size: var(--font-20);
 }
 
 .service-block_one-title a {
@@ -462,8 +462,9 @@
   -o-transition: all 300ms ease;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  line-clamp: 5;
-  -webkit-line-clamp: 5;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  height: 112px;
   overflow: hidden;
 }
 
@@ -1908,8 +1909,14 @@
   font-size: var(--font-14);
 }
 
-.slider-two_button-box .theme-btn .btn-wrap {
-  width: 100%;
+.slider-two_button-box .btn-style-one .btn-wrap {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-two_button-box .btn-style-two .btn-wrap {
+  float: none;
+  display: block;
 }
 
 .slider-two_button-box .btn-style-two .btn-wrap .text-two {

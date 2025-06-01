@@ -1,0 +1,28 @@
+.main-header .main-menu .navigation > li:first-child {
+  margin-right: var(--margin-zero);
+}
+.main-header .main-menu .navigation > li:last-child {
+  margin-right: var(--margin-right-50);
+}
+.odometer {
+  direction: ltr;
+  text-align: left;
+}
+.about-one_title,
+.sec-title_title {
+  padding-left: unset;
+  padding-right: var(--padding-right-40);
+  letter-spacing: normal;
+}
+.about-one_title::before,
+.sec-title_title::before {
+  left: unset;
+  right: 0;
+  top: -2px;
+  transform: rotate(270deg);
+  transform-origin: center;
+}
+.steps-one_image-inner {
+  padding-left: unset;
+  padding-right: var(--padding-right-30);
+}
