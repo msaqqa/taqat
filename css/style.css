@@ -1620,6 +1620,13 @@
 .news-one_block-lower-box {
   position: relative;
   padding: 30px 25px;
+  margin: 5px 0;
+}
+
+.project-progress-border {
+  border-bottom: 5px solid var(--secondary-color);
+  margin: 5px 0;
+  border-radius: var(--bs-progress-border-radius);
 }
 
 .news-one_block-author {
