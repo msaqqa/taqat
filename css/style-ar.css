@@ -26,3 +26,32 @@
   padding-left: unset;
   padding-right: var(--padding-right-30);
 }
+
+/* Page Title */
+.page-title .bread-crumb li:before {
+  right: unset;
+  left: -6px;
+}
+.page-title .bread-crumb li {
+  margin-right: unset;
+  padding-right: unset;
+  margin-left: var(--margin-right-15);
+  padding-left: var(--padding-right-15);
+}
+
+.fa-chevron-left:before {
+  content: "\f054";
+}
+.fa-chevron-right:before {
+  content: "\f053";
+}
+
+/* Broucher List */
+.brochure-list li span {
+  margin-right: unset;
+  margin-left: var(--margin-right-15);
+}
+.brochure-list li i {
+  right: unset;
+  left: 30px;
+}
