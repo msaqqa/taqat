@@ -1625,7 +1625,6 @@
 
 .project-progress-border {
   border-bottom: 5px solid var(--secondary-color);
-  margin: 5px 0;
   border-radius: var(--bs-progress-border-radius);
 }
 
@@ -1659,7 +1658,7 @@
   font-weight: 700;
   line-height: 1em;
   color: var(--color-two);
-  font-size: var(--font-32);
+  font-size: var(--font-30);
 }
 
 .news-one_block-date span {
@@ -4818,11 +4817,11 @@
   border: 1px solid rgba(var(--black-color-rgb), 0.1);
 }
 
-.case-detail .info-column ul {
+.info-column ul {
   position: relative;
 }
 
-.case-detail .info-column ul li {
+.info-column ul li {
   position: relative;
   font-weight: 500;
   font-size: var(--font-18);
@@ -4830,7 +4829,7 @@
   font-family: var(--font-family-Inter);
 }
 
-.case-detail .info-column ul li span {
+.info-column ul li span {
   position: relative;
   display: block;
   font-weight: 400;
@@ -4838,7 +4837,7 @@
   margin-top: var(--margin-top-10);
 }
 
-.case-detail .info-column_inner .social-nav a {
+.info-column_inner .social-nav a {
   position: relative;
   width: 46px;
   height: 46px;
@@ -4852,7 +4851,7 @@
   font-family: "Font Awesome 5 Brands";
 }
 
-.case-detail .info-column_inner .social-nav a:hover {
+.info-column_inner .social-nav a:hover {
   color: var(--white-color);
   background-color: var(--main-color);
 }
