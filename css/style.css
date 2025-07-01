@@ -1625,7 +1625,7 @@
 
 .project-progress-border {
   border-bottom: 5px solid var(--secondary-color);
-  border-radius: var(--bs-progress-border-radius);
+  border-radius: 5px;
 }
 
 .news-one_block-author {
